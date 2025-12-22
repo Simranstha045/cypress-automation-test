@@ -1,0 +1,5 @@
+# Cypress environment variables
+cypress.env.json
+
+# Dependencies
+node_modules/

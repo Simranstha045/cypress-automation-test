@@ -1,0 +1,13 @@
+name: e2e-tests
+on: [push, pull_request]
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
+        with:
+          specs: "cypress/e2e/**/*.cy.js"
+          browser: "chrome"

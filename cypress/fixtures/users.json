@@ -1,0 +1,33 @@
+[
+  {
+    "testID": "ATH-02",
+    "username": "locked_out_user",
+    "password": "secret_sauce",
+    "shouldSucceed": false,
+    "errorKey": "lockedOut",
+    "testCase": "Should not login with locked_out_user"
+  },
+  {
+    "testID": "ATH-03",
+    "username": "problem_user",
+    "password": "secret_sauce",
+    "shouldSucceed": true,
+        "testCase": "Verify /inventory"
+
+
+  },
+  {
+    "testID": "ATH-04",
+    "username": "performance_glitch_user",
+    "password": "secret_sauce",
+    "shouldSucceed": false,
+    "testCase": "Verify /inventory"
+
+  },
+  {
+    "testID": "ATH-05",
+    "username": "error_user",
+    "password": "secret_sauces",
+    "shouldSucceed": false
+  }
+]
